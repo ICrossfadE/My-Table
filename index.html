@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>TQ</title>
+</head>
+<body class="bg-dark">
+<!-- Nav Bar -->
+  <div class="container-fluid">
+    <div class="row d-flex align-items-center mb-4">
+      <div class="col">
+        <span class="fs-2">My Table</span>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Add New Person
+        </button>
+      </div>
+      <div class="col">
+        <button type="button" id="btn-deleteAll" class="btn btn-danger">Delete All</button>
+      </div>
+  </div>
+
+<!-- Table -->
+  <table id="example" class="table table-striped" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Age</th>
+      </tr>
+    </tfoot>
+  </table>
+
+<!-- Modal Window -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Person</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="submit" name="addTask">
+            <div class="mb-1">
+              <label for="exampleInputName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" name="name">
+            </div>
+            <div class="mb-1">
+              <label for="exampleInputEmail" class="form-label">Email</label>
+              <input type="text" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" name="email">
+            </div>
+            <div class="mb-1">
+              <label for="exampleInputAge" class="form-label">Age</label>
+              <input type="text" class="form-control" id="exampleInputAge" aria-describedby="emailHelp" name="age">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="/script.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+</script>
+</body>
+</html>

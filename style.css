@@ -1,0 +1,17 @@
+td, th {
+  border-style: none;
+  color: #adb5bd;
+}
+.table>:not(caption)>*>* {
+  border-bottom-width: 0px;
+}
+.btn-danger,.btn-secondary,.btn-primary {
+  width: 100%;
+}
+.container-fluid {
+  color: #fff;
+}
+
+.modal-content {
+  color: #000;
+}
